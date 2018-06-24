@@ -1,0 +1,17 @@
+{
+  "name": "crunchyroll-rich-presence",
+  "version": "1.0.0",
+  "description": "Gives you discord rich presence for the anime you're watching!",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/aleanaa/crunchyroll-rich-presence",
+  "author": "Aleana",
+  "devDependencies": {
+    "electron": "^2.0.0"
+  },
+  "dependencies": {
+    "discord-rich-presence": "0.0.6"
+  }
+}
