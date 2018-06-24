@@ -1,9 +1,5 @@
 // Modules to control application life and create native browser window
 const {app, BrowserWindow} = require('electron')
-//const {dialog} = require('electron');
-//const window = require('electron').BrowserWindow
-//const {ipcMain} = require('electron')
-//const http = require('http')
 const client = require('discord-rich-presence')('460310843792293897');
 
 // Keep a global reference of the window object, if you don't, the window will
@@ -53,8 +49,6 @@ function updateTitle(event,title) {
 }
 function loadURL(event,url) {
   console.log("Loaded Page, url: " + url)
-//  var data = JSON.parse('{"' + decodeURI(url).replace(/"/g, '\\"').replace(/&/g, '","').replace(/=/g,'":"') + '"}')["/?data"]
- // console.log(data)
 }
 
 function createWindow () {
@@ -63,15 +57,9 @@ function createWindow () {
 
   // and load the index.html of the app.
   mainWindow.loadURL('http://crunchyroll.com')
-
-  // Open the DevTools.
-  // mainWindow.webContents.openDevTools()
   mainWindow.webContents.on('new-window', newWindow);
   mainWindow.webContents.on('did-navigate', loadURL);
   mainWindow.on('page-title-updated', updateTitle);
-  //mainWindow.webContents.on('did-navigate', () => {   mainWindow.addDevToolsExtension('/mnt/secondary/aleana/.config/chromium/Default/Extensions/ihegfgnkffeibpmnajnoiemkcmlbmhmi/0.10.4_0')
-  //  injectScripts(mainWindow)
-  //});
   // Emitted when the window is closed.
   mainWindow.on('closed', function () {
     // Dereference the window object, usually you would store windows
@@ -106,30 +94,6 @@ app.on('activate', function () {
     createWindow()
   }
 })
-
-// In this file you can include the rest of your app's specific main process
-// code. You can also put them in separate files and require them here.
-
-//const requestHandler = (request, response) => {
-//  console.log(request.url)
-
-//if(data !== "closed_tab") {
-//client.updatePresence({
-//  details: data,
-//  largeImageKey: 'crunchyroll',
-//  instance: true,
-//});
-//} else {
-//	process.exit()
-//}
-//}
-//
-//const server = http.createServer(requestHandler)
-
-//server.listen(port, (err) => {
-//  if (err) {
-//    return console.log('Something bad happened', err)
-//  }
 
 //  console.log(`Server is listening on ${port}`)
 //})
