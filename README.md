@@ -12,3 +12,5 @@ A very shitty js script to have rich presence for what your watching on crunchyr
 I have no idea what I'm doing in js, but wanted a better solution than [a chrome extention](https://github.com/LoganMD/Crunchycord), so I took a crack at making this.
 
 If there's something that can be done better, or you feel you can do something better than what I've done, feel free to make a PR or an issue with what you think could be changed, I'm more than open to feedback on this!
+
+[There's also a support server that you can find here!](https://discord.gg/eJhG4Tq)
