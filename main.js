@@ -60,6 +60,7 @@ function createWindow () {
   mainWindow.webContents.on('new-window', newWindow);
   mainWindow.webContents.on('did-navigate', loadURL);
   mainWindow.on('page-title-updated', updateTitle);
+  mainWindow.setMenu(null);
   // Emitted when the window is closed.
   mainWindow.on('closed', function () {
     // Dereference the window object, usually you would store windows
