@@ -75,10 +75,6 @@ function createWindow () {
 // Some APIs can only be used after this event occurs.
 app.on('ready', createWindow)
 
-app.on('ready', function() {
-  console.log ('addDevToolsExtension: ' + BrowserWindow.addDevToolsExtension ('CrunchyrollHTML5'))
-})
-
 // Quit when all windows are closed.
 app.on('window-all-closed', function () {
   // On OS X it is common for applications and their menu bar
